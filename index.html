@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="stopwatch.png">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contaner">
+        <div id="contanerInput">
+            <input type="number" id="inputDays" class="input" maxlength="2" onKeyPress= "if(this.value.length==2) return false;">
+            <input type="number" id="inputHours" class="input" maxlength="2" onKeyPress= "if(this.value.length==2) return false;">
+            <input type="number" id="inputMinets" class="input" maxlength="2" onKeyPress= "if(this.value.length==2) return false;">
+            <input type="number" id="inputSecond" class="input" maxlength="2" onKeyPress= "if(this.value.length==2) return false;">
+        </div>
+        <button type="button" id="button">Start</button>
+        <button type="button" id="button2">Stop</button>
+    </div>
+    <div id="Clock">
+        <h1 id="Clocks">00 : 00 : 00 : 00</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
